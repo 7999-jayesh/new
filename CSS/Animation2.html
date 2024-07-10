@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annimation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 10px solid red;
+            height: 100vh;
+            width: 100vw;
+
+        }
+        .box1{
+            height: 80px;
+            width: 250px;
+            background-color: blue;
+            border: 2px solid black;
+            margin: 5px;
+            border-radius: 15px;
+            position: relative;
+            animation: rightMovement;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            /* animation-delay: 1s; */
+            animation-timing-function:linear;
+        }
+        @keyframes rightMovement {
+            from{
+                left: 0px;
+            }
+            to{
+                left: 1250px;
+            }
+        }
+
+        .box2{
+            height: 80px;
+            width: 250px;
+            background-color: blue;
+            border: 2px solid black;
+            margin: 2px;
+            top: 70%;
+            border-radius: 15px;
+            position: relative;
+            animation: rightMovement2;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            /* animation-delay: 1s; */
+            animation-timing-function:linear;
+        }
+        @keyframes rightMovement2 {
+            from{
+                left: 0px;
+            }
+            to{
+                left: 1250px;
+            }
+        }
+
+        .ball{
+            background: linear-gradient(purple , blue);
+            height: 60px;
+            width: 60px;
+            border-radius: 100%;
+            position:relative ;
+            top: 15px;
+            bottom: 15px;
+            left: 700px;
+            animation: bounce 3s infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes bounce {
+            10%{
+                height: 50px;
+                width: 45px;
+            }
+            30%{
+                height: 55px;
+                width: 50px;
+            }
+            50%{
+                height: 30px;
+                width: 55px;
+                transform: translateY(300px);
+            }
+            90%{
+                height: 55px;
+                width: 60px;
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="ball"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html> 
+
+
+

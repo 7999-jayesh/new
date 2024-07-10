@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(42, 141, 211);
+}
+
+.app{
+    background: white;
+    width:90%;
+    max-width: 650px;
+    margin: 100px auto;
+    border-radius: 15px;
+    padding: 30px;
+
+}
+
+.app h1{
+    font-size: 40px;
+    color: black ;
+    font-weight:900 ;
+}
+
+.quiz{
+    padding: 20px 0px;
+}
+
+.quiz h2{
+    font-size: 25px;
+    color: black;
+    font-weight: 700;
+}
+
+.btn{
+    background-color: white;
+    font: 500;
+    width: 100%;
+    text-align: left;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover:not([disabled]){  /*  disable is initially -> false and after  click -> true */
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
+
+.btn:disabled{
+    cursor: no-drop;  /* it denpeend on  disabled true or false value  if it is true then no-drop start working*/
+}
+
+#next-btn{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    width: 120px;
+    border: 0;
+    padding: 10px;
+    margin: 20px opx;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.correct{
+    background-color: lightgreen;
+}
+
+.incorrect{
+    background-color: red;
+}

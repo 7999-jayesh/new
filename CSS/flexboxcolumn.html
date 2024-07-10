@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: pink;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            align-items: start;
+            /* align-content: center; */
+        }
+        .box{
+            margin: 5px;
+            font: 100px;
+            height: 100px;
+            width: 100px;
+            border: 3px solid black ;
+
+        }
+        #box1{
+            background-color: aqua;
+            flex-shrink: 5;
+        }
+        #box2{
+            background-color: purple;
+            /* flex-grow: 3; */
+            align-self: center;
+        }
+        #box3{
+            background-color: yellow;
+            flex-shrink: 2;
+            align-self: center;
+        }
+        #box4{
+            background-color: red;
+              /* flex-grow: 3; */
+              align-self: end;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">NavBar</div>
+        <div class="box" id="box2">Photo</div>
+        <div class="box" id="box3">Text</div>
+        <div class="box" id="box4">contact-us</div>
+    </div>
+</body>
+</html>
